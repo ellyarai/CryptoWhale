@@ -1,0 +1,80 @@
+img{
+    width: 150px;
+}
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+h1{
+    color: rgba(0, 0, 0, 0.76);
+    margin: 1px;
+}
+
+header{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+form{
+    text-align: center;
+    font-family: 'Cantarell', cursive;
+    color: rgb(255, 255, 255);
+}
+
+#sisend{
+    width: 30%;
+    height: 100px;
+}
+
+#voti{
+    width: 30%;
+    height: 25px;
+}
+
+textarea{
+    resize: none;
+    margin: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: rgb(0, 84, 136);
+    background-color: rgb(206, 206, 206);
+    
+}
+
+#vastus{
+    width: 30%;
+    height: 100px;
+}
+
+button{
+    width: 8%;
+    height: 25px;
+    margin: 2px;
+    margin-top: 20px;
+}
+
+
+
+body{
+    background-color: #000000;
+    background-image: linear-gradient(rgb(145, 145, 145), rgb(0, 50, 92));
+}
+
+button{
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(206, 206, 206);
+    color: rgb(100, 105, 177);
+    font-family: 'Cantarell', cursive;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+

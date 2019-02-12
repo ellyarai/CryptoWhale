@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ITI0103 homework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <p><h1>C R Y P T O</h1></p>
+            <p><h1>W H A L E</h1></p>
+            <img src="logo.png" alt="Here goes logo but hello there!"/>
+        </div>
+    </header>
+
+    <script src="logic.js"></script>
+
+    <form>
+        <h3>I N P U T</h3>
+        <textarea id="sisend" placeholder="Type here input (only small letters)"></textarea>
+        <h3>K E Y</h3>
+        <textarea id="voti" placeholder="Type here key (only small letters)"></textarea><br>
+        <button type="button" id="button1" onClick="document.getElementById('vastus').innerHTML = OTPencrypt(document.getElementById('sisend').value,document.getElementById('voti').value)">OTP-encrypt</button>
+        <button type="button" id="button2" onClick="document.getElementById('vastus').innerHTML = OTPdecrypt(document.getElementById('sisend').value,document.getElementById('voti').value)">OTP-decrypt</button>
+        <button type="button" id="button3" onClick="document.getElementById('vastus').innerHTML = SHA512(document.getElementById('sisend').value)">SHA-2</button>
+        <button type="button" id="button4" onClick="md5()">MD5 decrypt</button><br>
+        <h3>O U T P U T</h3>
+        <textarea id="vastus" placeholder="Output" readonly></textarea>
+    </form>
+</body>
+</html>
